@@ -1,6 +1,12 @@
 ---
 title: "Template R Markdown"
-author: "Amanda Suzzi"
+author: 
+  - name: "Amanda Suzzi"
+    affiliation: "University of Massachusetts Amherst"
+    orcid: 0000-0001-7640-0842
+abstract: |
+  A concise description of your publication
+keywords: [lorem, ipsum, dolor, sit, amet]
 date: "7/5/2022"
 output:
   html_document: 
@@ -55,9 +61,13 @@ Clean out your workspace and restart R and re-run everything periodically, if th
 
 Keep things machine- and human-readable, whenever possible.
 
+
+
 ```{r, eval=TRUE}
 ## insert your brilliant WORKING code here
 ```
+
+
 
 
 # References

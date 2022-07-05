@@ -8,6 +8,7 @@ Author:
            email = "asuzzi@umass.edu",
            comment = c(ORCID = "0000-0001-7640-0842"))
 Description: A template for future data analysis reports
+Language: en-US
 License: MIT + file LICENSE
 Depends: R (>= 4.1.0),
     tidyverse,

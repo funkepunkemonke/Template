@@ -1,0 +1,8 @@
+If you have a data frame AND you have exerted yourself to rationalize the factor levels, you have my blessing to save it to file in a way that will preserve this hard work upon re-import. 
+
+```{r savefile}
+
+saveRDS(temp, "temp.rds")
+rm(temp)
+
+```
