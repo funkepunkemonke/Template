@@ -3,17 +3,26 @@ title: "Template R Markdown"
 author: "Amanda Suzzi"
 date: "7/5/2022"
 output:
-  html_document:
-    keep_md: true
+  html_document: 
+    keep_md: yes
+    toc: yes
+    number_sections: yes
+    df_print: kable
+bibliography: grateful-refs.bib
 ---
 
 
 
-## R Markdown
+# Introduction
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+# Methods
+We used R version 4.1.2 [@base] and the following R packages: grateful v. 0.1.11 [@grateful], knitr v. 1.39 [@knitr2014; @knitr2015; @knitr2022], rmarkdown v. 2.14 [@rmarkdown2018; @rmarkdown2020; @rmarkdown2022].
+
+# Results
 
 
 ```r
@@ -30,7 +39,6 @@ summary(cars)
 ##  Max.   :25.0   Max.   :120.00
 ```
 
-## Including Plots
 
 You can also embed plots, for example:
 
@@ -38,11 +46,15 @@ You can also embed plots, for example:
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+## Tips
+Clean out your workspace and restart R and re-run everything periodically, if things get weird.
+
+Keep things machine- and human-readable, whenever possible.
+
 
 ```r
 ## insert your brilliant WORKING code here
 ```
 
-Clean out your workspace and restart R and re-run everything periodically, if things get weird.
 
-Keep things machine- and human-readable, whenever possible.
+# References

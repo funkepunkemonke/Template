@@ -3,8 +3,12 @@ title: "Template R Markdown"
 author: "Amanda Suzzi"
 date: "7/5/2022"
 output:
-  html_document:
-    keep_md: true
+  html_document: 
+    keep_md: yes
+    toc: yes
+    number_sections: yes
+    df_print: kable
+bibliography: grateful-refs.bib
 ---
 
 ```{r setup, include = FALSE, cache = FALSE}
@@ -12,17 +16,25 @@ knitr::opts_chunk$set(error = TRUE)
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-## R Markdown
+# Introduction
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.
 
-When you click the **Knit** button a document will be generated that includes both content as well as the output of any embedded R code chunks within the document. You can embed an R code chunk like this:
+
+
+# Methods
+```{r results = "asis", echo=FALSE}
+#this creates a paragraph of citations
+grateful::cite_packages(output = "paragraph", cite.tidyverse = TRUE)
+
+```
+
+# Results
 
 ```{r cars}
 summary(cars)
 ```
 
-## Including Plots
 
 You can also embed plots, for example:
 
@@ -32,10 +44,14 @@ plot(pressure)
 
 Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
 
+## Tips
+Clean out your workspace and restart R and re-run everything periodically, if things get weird.
+
+Keep things machine- and human-readable, whenever possible.
+
 ```{r, eval=TRUE}
 ## insert your brilliant WORKING code here
 ```
 
-Clean out your workspace and restart R and re-run everything periodically, if things get weird.
 
-Keep things machine- and human-readable, whenever possible.
+# References
