@@ -13,6 +13,9 @@ bibliography: grateful-refs.bib
 
 
 
+
+Isolate each computationally demanding step in its own script and write the precious object to file with saveRDS(my_precious, here("results", "my_precious.rds")). Now you can develop scripts to do downstream work that reload the precious object via my_precious <- readRDS(here("results", "my_precious.rds")). Breaking an analysis i
+ 
 # Introduction
 
 This is an R Markdown document. Markdown is a simple formatting syntax for authoring HTML, PDF, and MS Word documents. For more details on using R Markdown see <http://rmarkdown.rstudio.com>.

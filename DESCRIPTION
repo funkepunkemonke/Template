@@ -1,0 +1,20 @@
+Package: template
+Title: Template
+Version: 1.0
+Author: 
+    person(given = "Amanda",
+           family = "Suzzi-Simmons",
+           role = c("aut", "cre"),
+           email = "asuzzi@umass.edu",
+           comment = c(ORCID = "0000-0001-7640-0842"))
+Description: A template for future data analysis reports
+License: MIT + file LICENSE
+Depends: R (>= 4.1.0),
+    tidyverse,
+    holepunch,
+    grateful,
+    rmarkdown,
+    usethis
+Encoding: UTF-8
+LazyData: true
+ByteCompile: true
